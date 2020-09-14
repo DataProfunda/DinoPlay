@@ -5,8 +5,15 @@ from PIL import Image
 import cv2
 import pickle
 from pyautogui import press, typewrite, hotkey
-
 import time
+from selenium import webdriver
+
+#Open new tab with Dino game.
+PATH = "C:\Program Files (x86)\chromedriver.exe"
+
+driver = webdriver.Chrome(PATH)
+
+driver.get("https://chromedino.com/")
 
 
 #Pretrained Haar model
@@ -34,6 +41,7 @@ while(True):
         roi_gray = gray[y:y + h, x:x + w] 
         roi_color = frame[y:y + h, x:x + w] 
         
+        #Detect smile
         smiles = smile_cascade.detectMultiScale(roi_gray, 2 , 30)
         
         smile_detected = False
