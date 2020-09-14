@@ -17,8 +17,8 @@ driver.get("https://chromedino.com/")
 
 
 #Pretrained Haar model
-face_cascade = cv2.CascadeClassifier('data/haarcascade_frontalface_alt2.xml')
-smile_cascade = cv2.CascadeClassifier('data/haarcascade_smile.xml') 
+face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_alt2.xml')
+smile_cascade = cv2.CascadeClassifier('haarcascade_smile.xml') 
 
 
 cap = cv2.VideoCapture(0+ cv2.CAP_DSHOW)
