@@ -9,7 +9,7 @@ When we are smiling Dino is happy so he jumps! Now we can play Dino without touc
 ![s1](https://user-images.githubusercontent.com/69935274/101422420-f183f780-38f6-11eb-8079-be2bb4d9c847.png)
 
 # 2. Initialize pretrained Haar model.
-In variable "cap" we define which camera we will be using. 
+In variable "cap" we define which camera we will be using. <br>
 ![s2](https://user-images.githubusercontent.com/69935274/101422441-ff397d00-38f6-11eb-86dd-0be6bbae4b97.png)
 
 # 3. While loop.
